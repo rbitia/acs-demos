@@ -1,3 +1,4 @@
+
 # Create an Azure Container Instance
 
 Here we will create a single instance of a container using Azure Container Registry.
@@ -19,6 +20,9 @@ env | grep SIMDEM_.*
 ```
 
 ## Create the Container
+
+"SIMDEM_ACI_CONTAINER" is the docker container image name. Use "microsoft/aci-helloworld" for tutorial purposes. 
+
 
 ```
 az container create --name $SIMDEM_ACI_INSTANCE_NAME --image $SIMDEM_ACI_CONTAINER --resource-group $SIMDEM_RESOURCE_GROUP --ip-address public
